@@ -46,13 +46,40 @@ composer
 Composer version 2.3.4 
 ```
 >This verifies that Composer was successfully installed on your system and is available system-wide.
->
-**uninstall php version 7.4/8.1 ubuntu 20.04** Code Example
+_________________________________________________________________________________________________
+
+# Uninstall composer
+>To remove just composer package itself from Ubuntu 16.04 (Xenial Xerus) execute on terminal:
+```
+sudo apt-get remove composer
+```
+**Uninstall composer and it's dependent packages**
+To remove the composer package and any other dependant package which are no longer needed from Ubuntu.
+```
+sudo apt-get remove --auto-remove composer
+```
+**Purging composer**
+If you also want to delete configuration and/or data files of composer from Ubuntu Xenial then this will work:
+```
+sudo apt-get purge composer
+```
+To delete configuration and/or data files of composer and it's dependencies from Ubuntu Xenial then execute:
+```
+sudo apt-get purge --auto-remove composer
+```
+https://www.howtoinstall.co/en/ubuntu/xenial/composer?action=remove
+________________________________________________________________________________________________________________________________________________
+
+# uninstall php version 7.4/8.1 ubuntu 20.04 
+>Code Example
 ```
 sudo apt-get purge php7.*
+```
 sudo apt-get autoclean
+```
 sudo apt-get autoremove
 ```
+
 
 [LINK] https://www.digitalocean.com/community/tutorials/how-to-install-composer-on-ubuntu-20-04-quickstart
 
