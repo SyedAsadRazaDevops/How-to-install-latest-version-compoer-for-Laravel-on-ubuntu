@@ -89,7 +89,7 @@ ________________________________________________________________________________
 # uninstall php version 7.4/8.1 ubuntu 20.04 
 >Code Example
 ```
-sudo apt-get purge php7.*
+sudo apt-get purge php8.*
 ```
 ```
 sudo apt-get autoclean
