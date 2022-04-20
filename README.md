@@ -52,7 +52,17 @@ ________________________________________________________________________________
 sudo php composer-setup.php --install-dir=/path/to/project
 ```
 This will download a file named composer.phar in your project root directory.
-_________________________________________________________________________________________________
+_____________________________________________________________________________________________________
+
+**if facing error** : Try this
+```
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
+```
+
+[LINK] Related to this issue https://github.com/composer/composer/issues/5510. 
+
+Hope it also fixes yours
+_________________________________________________________________________________________________________
 
 # Uninstall composer
 >To remove just composer package itself from Ubuntu 16.04 (Xenial Xerus) execute on terminal:
