@@ -46,6 +46,12 @@ composer
 Composer version 2.3.4 
 ```
 >This verifies that Composer was successfully installed on your system and is available system-wide.
+_____________________________________________________________________________________________________
+**To install composer locally enter:**
+```
+sudo php composer-setup.php --install-dir=/path/to/project
+```
+This will download a file named composer.phar in your project root directory.
 _________________________________________________________________________________________________
 
 # Uninstall composer
