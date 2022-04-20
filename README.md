@@ -75,7 +75,9 @@ ________________________________________________________________________________
 ```
 sudo apt-get purge php7.*
 ```
+```
 sudo apt-get autoclean
+```
 ```
 sudo apt-get autoremove
 ```
