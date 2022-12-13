@@ -7,7 +7,7 @@
 sudo apt update
 sudo apt install php-cli unzip
 ```
-###Step 2 — Download and Install Composer
+### Step 2 — Download and Install Composer
 
 Make sure you’re in your home directory, then retrieve the Composer installer using curl:
 ```
@@ -35,7 +35,7 @@ To test your installation, run:
 ```
 composer
 ```
-# Output
+### Output
  ```
    ______
   / ____/___  ____ ___  ____  ____  ________  _____
