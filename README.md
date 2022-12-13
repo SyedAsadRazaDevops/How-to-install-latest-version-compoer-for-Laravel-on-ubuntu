@@ -1,14 +1,14 @@
-# who-to-install-latest-version-compoer-on-ubuntu-
-Introduction:  In this quickstart guide, we’ll install Composer on an Ubuntu 20.04 server.
+## Introduction:  In this quickstart guide, we’ll install Composer on an Ubuntu 20.04 server.
 
 # TO INSTALL THE LATEST VERSION OF COMPOSER RUN THESE COMMMAND:
 
-Step 1 — Install Dependencies
+### Step 1 — Install Dependencies
  ```
- sudo apt update
+sudo apt update
 sudo apt install php-cli unzip
 ```
-Step 2 — Download and Install Composer
+###Step 2 — Download and Install Composer
+
 Make sure you’re in your home directory, then retrieve the Composer installer using curl:
 ```
 cd ~
@@ -46,6 +46,14 @@ composer
 Composer version 2.3.4 
 ```
 >This verifies that Composer was successfully installed on your system and is available system-wide.
+
+
+
+
+
+
+
+**[OPTIONAL-CASE]**
 _____________________________________________________________________________________________________
 **To install composer locally enter:**
 ```
@@ -54,39 +62,38 @@ sudo php composer-setup.php --install-dir=/path/to/project
 This will download a file named composer.phar in your project root directory.
 _____________________________________________________________________________________________________
 
-**if facing error** : Try this
+**[if facing error]** : Try this
 ```
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/bin --filename=composer
 ```
-
 [LINK] Related to this issue https://github.com/composer/composer/issues/5510. 
 
 Hope it also fixes yours
-_________________________________________________________________________________________________________
+____________________________________________________________________________________________________
 
-# Uninstall composer
+### Uninstall composer
 >To remove just composer package itself from Ubuntu 16.04 (Xenial Xerus) execute on terminal:
 ```
 sudo apt-get remove composer
 ```
 **Uninstall composer and it's dependent packages**
-To remove the composer package and any other dependant package which are no longer needed from Ubuntu.
+>To remove the composer package and any other dependant package which are no longer needed from Ubuntu.
 ```
 sudo apt-get remove --auto-remove composer
 ```
 **Purging composer**
-If you also want to delete configuration and/or data files of composer from Ubuntu Xenial then this will work:
+>If you also want to delete configuration and/or data files of composer from Ubuntu Xenial then this will work:
 ```
 sudo apt-get purge composer
 ```
-To delete configuration and/or data files of composer and it's dependencies from Ubuntu Xenial then execute:
+>To delete configuration and/or data files of composer and it's dependencies from Ubuntu Xenial then execute:
 ```
 sudo apt-get purge --auto-remove composer
 ```
 https://www.howtoinstall.co/en/ubuntu/xenial/composer?action=remove
-________________________________________________________________________________________________________________________________________________
+______________________________________________________________________________________________________
 
-# uninstall php version 7.4/8.1 ubuntu 20.04 
+### uninstall php version 7.4/8.1 ubuntu 20.04 
 >Code Example
 ```
 sudo apt-get purge php8.*
